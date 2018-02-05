@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="objects.js"></script>
+<script src="data.js"></script>
+<script src="school.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="stylsheet.css"/>
+<body>
+
+<table id ="all" border="1"><tr id ="topSection"><td colspan="2">
+<div id="intro"> Add Students, Teachers, or Sections To System</div>
+<table id="adder" border = "1" style = background-color:linen>
+    <tr id = "student">
+        <td>First Name: <input type="text" id="sFirst" value="Royce" size="15"></td>
+        <td>Last Name: <input type="text" id="sLast" value="Williams" size="15"></td>
+    <td>Grade: <select id="grade">
+    <option value="9">9th</option>
+    <option value="10"> 10th</option>
+    <option value="11"> 11th</option>
+    <option value="12"> 12th</option>
+    </select></td>
+    <td><button id="addStudent" onclick="addStudent()">Add Student</button></td></tr>
+<tr id="teacher">
+    <td>First Name: <input type="text" id="tFirst" value="Royce" size="15"></td>
+    <td>Last Name: <input type="text" id="tLast" value="Williams" size="15"></td>
+    <td>Subject: <input type="text" id="subject" value="Math" size="15"></td>
+    <td><button id="addTeacher" onclick="addTeacher()">Add Teacher</button></td></tr>
+<tr id = "section">
+    <td>Section: <input type="text" id="sectionName" value="" size="15"></td>
+    <td>Section Size: <input type="text" id="sectionSize" value="" size="10"></td>
+    <td><button id="addSection" onclick="addSection()">Add section</button></td></tr>
+</table>
+</tr></td>
+
+
+<tr id = "sectionAndSearchIntro">
+    <td id ="sectionIntro"> Add Students and Teachers Into a Section  <i class="fa fa-upload" aria-hidden="true" style="font-size:25px;color: lightcoral; "></i></td>
+    <td id = "searchIntro">Look Up Students By First Name <i class="fa fa-address-book"aria-hidden="true"style="font-size:25px;color: lightcoral; " ></i></td>
+
+</tr>
+    <tr id = sectionFormerBox></tr>
+    <td><div id ="sectionFormerStudents">
+        <select id="studentPool">
+        <option value ="students">Select Student</option>
+        </select>
+        <select id = "sectionPoolS">
+            <option value ="sections">Select Section</option>
+        </select>
+        <button id="formSection" onclick="formSection()" >Create Selection</button>
+    </div>
+        <div id = "sectionFormerTeachers">
+            <select id ="teacherPool">
+                <option value="Teachers">Select Teacher</option>
+            </select>
+            <select id = "sectionPoolT">
+                <option value ="sections">Select Section</option>
+            </select>
+            <button id="addTeacherToSection" onclick="addTeachersToSection()"type="button" >Create Selection</button>
+            </button>
+        </div>
+    </td>
+    <td><div id = "searcher">
+    <input type = "text" id = "studentDesired" placeholder="First Name" value ="" size ="15">
+    <button id="studentWanted" onclick="studentSearcher()">Find Student</button>
+</div><div id = "studentResults"></div></td></tr>
+
+<tr id = "removerAndListerIntro">
+    <td><div id = "removerIntro">Remove Students From A Section <i class="fa fa-scissors" aria-hidden="true" style="font-size:25px;color: lightcoral;"></i></div></td>
+    <td><div id ="listIntro">List Sections, Students Or Teachers <i class="fa fa-list-ol"style="font-size:20px;color:lightcoral;"></i></div></td></tr>
+    <tr><td>
+    <select id="removerSections">
+        <option value ="sections">Select Section</option>
+    </select>
+<button id = "displayStudentsInSection" onclick="studentsInSection() ">Display Students In Section</button>
+<div id = "studentsDisplayed"></div></td>
+
+
+
+
+
+<td><div id="listMaker">
+    <select id="listNames">
+        <option value ="students">Students</option>
+        <option value ="teachers">Teachers</option>
+        <option value ="sections">Section</option>
+    </select>
+    <button id="list" onclick="listNames()">List Items</button>
+</div><div id = "items"></div></td>
+    </tr>
+    <div id ="error"></div>
+    <div id = "confirm"></div>
+
+
+
+</table>
+</body>
+</html>

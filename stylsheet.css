@@ -1,0 +1,161 @@
+body{
+    background-color: honeydew;
+    font-family: "Bookman Old Style";
+}
+
+#intro{
+    text-align: center;
+    font-size:30px;
+    color: lightcoral;
+}
+#all{
+    margin-top: 20px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#adder{
+   position: relative;
+    top:15%;
+    height: 150px;
+    width:40%;
+    margin: auto;
+    font-size:20px;
+    border-style: ridge;
+    border-color: lightcoral ;
+}
+
+#adder {
+    width: 40%;
+    margin: auto;
+}
+
+#confirm{
+    font-size: large;
+    color: limegreen;
+    position: relative;
+    text-align: center;
+}
+#error{
+    color: red;
+    position: relative;
+    text-align: center;
+}
+
+
+
+#listIntro{
+    font-size:25px;
+    color: lightcoral;
+}
+#listMaker{
+    position: relative;
+}
+
+#itemsTable{
+    position: relative;
+    margin-top:10px;
+    background-color: linen;
+    border-color: lightcoral;
+}
+#listNames{
+    font-size: 15px;
+    width:100px;
+}
+#list{
+    font-size: 15px;
+    width: 100px;
+}
+
+
+
+
+#removerIntro{
+    font-size:25px;
+    color: lightcoral;
+}
+#studentsRemovable{
+    margin-top: 10px;
+    background-color: beige;
+     border-color: lightcoral;
+
+}
+#removerSections{
+    width: 150px;
+    font-size:15px;
+}
+#displayStudentsInSection{
+    width: 150px;
+    font-size:15px;
+
+}
+
+
+
+#searchIntro{
+    margin-top: 50px;
+    font-size:25px;
+    color: lightcoral;
+}
+#searcher{
+    margin-top: 10px;
+}
+#studentSearched{
+    position: relative;
+    margin-top: 30px;
+    background-color: beige;
+    border-color: lightcoral;
+}
+#studentWanted{
+    width: 110px;
+    font-size:15px;
+}
+#studentDesired{
+    font-size: 15px;
+}
+
+
+
+
+#sectionFormer{
+    font-size:15px ;
+}
+
+#sectionIntro{
+    margin-top: 50px;
+    font-size:25px;
+    color: lightcoral;
+}
+#teacherPool{
+    width: 150px;
+    font-size:15px;
+}
+#studentPool{
+    width: 150px;
+    font-size:15px;
+}
+#sectionPoolT{
+    width: 150px;
+    font-size:15px;
+}
+#formSection{
+    width: 150px;
+    font-size:15px;
+
+}
+#sectionPoolS{
+    width: 150px;
+    font-size:15px;
+}
+#addTeacherToSection{
+    width: 150px;
+    font-size:15px;
+
+}
+
+#error{
+    font-size: 20px;
+}
+
+#topSection{
+    height: 25%;
+}
